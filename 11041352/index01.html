@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YiChunLiao weibo</title>
+    <style>
+        body {
+            font-family: "HGP行書体", "Yu Mincho", "日本花園明朝体", serif; 
+            background: linear-gradient(to bottom, #80deea, #a5d6a7); /* 藍綠漸層 */
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            max-width: 1000px;
+        }
+        .header {
+            text-align: center;
+            padding: 10px;
+            font-size: 1.5em;
+            background-color: #80deea;
+            color: #333;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: #b2dfdb;
+        }
+        .profile img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            margin-right: 20px;
+        }
+        .motto {
+            font-size: 1.2em;
+            color: #333;
+        }
+        .content {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .left-column, .right-column {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .section {
+            background-color: #e0f2f1;
+            padding: 15px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease; 
+        }
+        .section:hover {
+            background-color: #b2ebf2;   /*游標隨著移到白色框框就會讓框框顏色變淡藍*/
+        }
+        h3 {
+            color: #333;
+        }
+        p {
+            color: #555;
+            line-height: 1.5;
+        }
+        .skills img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+        .circle-dot {
+            display: flex;
+            align-items: center;
+        }
+        .circle-dot::before {
+            content: "•";
+            margin-right: 10px;
+            font-size: 1.5em;
+            color: #333;
+        }
+        .programming-languages {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        .programming-languages img {
+            width: 20px;
+            height: 20px;
+        }
+        .footer {
+            background-color: #80deea;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            color: #333;
+        }
+        .spacer {
+            height: 15px; 
+        }
+
+       
+        .education {
+            background-color: #e0f2f1;
+            padding: 20px;
+            border-radius: 15px; 
+            width: 85%; 
+            max-width: 600px; 
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .education .circle-dot {
+            width: 100%;
+            text-align: left;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+
+         .marquee {
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            box-sizing: border-box;
+            margin: 25px 0;
+        }
+
+        .marquee img {
+            display: inline-block;
+            width: 150px;
+            height: auto;
+            margin-right: 25px;
+            animation: marquee 15s linear infinite;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">YiChunLiao weibo</div>
+        
+        <div class="profile">
+            <img src="photo/Me.jpg" alt="個人照片">
+            <div>
+                <h3>苡均</h3>
+                <h4>找到目標努力前進</h4> 
+                <h4>個性:負責、具備邏輯思考</h4> 
+                <h4>gmail:julialiaowork@gmail.com</h4> 
+            </div>
+        </div>
+        
+        <div class="content">
+            <!-- 左邊欄位 -->
+            <div class="left-column">
+
+                <div class="section">
+                    <h3>學歷</h3>
+                    <li>中原大學 企業管理學系 輔資訊管理學系</li>
+                    <li>中壢高商 普通科</li>
+                </div>
+                
+                <div class="section education"> 
+                    <h3>代表事蹟</h3>
+                    <b><p>書卷獎: 企管班排第三名 (大三上)<br></b>
+                        班排名:  3/52 百分比: 5.77%</p>
+                    <b><p>專案: 故居記藝 詩畫展(詹冰╳詹益秀╳詹前裕)<br></b>
+                    與商設系及企管系的同學組成九人團隊，學習如何整合跨領域的專業知識。我們的專案是活化位於苗栗卓蘭的詹冰故居老宅，業主希望我們提出可行的方案，滿足當地居民及業主的需求。在專案過程中，我們面臨了許多摩擦與協調的挑戰。透過觀察組織氛圍，了解團隊成員的想法，以及不斷調查當地居民及業主的需求。最終，我們以舉辦展覽的方式呈現專案成果，成功運用企管系的廣告行銷企劃能力讓當天參觀人次達到110</p>
+                    <b><p>比賽: 2020福衛五號小論文比賽全國第一名<br></b>
+                    從高中開始，我對研究充滿好奇。在高三時，我與朋友們組隊參加了全國衛星小論文競賽，這是我第一次正式進行學術研究。我們的目標是深入研究石門水庫及寶山水庫的水質，並透過文獻閱讀產出一篇小論文，這對於當時的我們來說，是一個相當艱鉅的挑戰。在研究過程中，我們多次遭遇挫折，數次懷疑自己的能力，甚至想過放棄。但在老師的指導下，最終克服了重重難關。而我們的努力沒有白費，獲得了全國第一名的殊榮，並成功將小論文發表於期刊上</p>    
+                    <b><p>期刊: 航測及遙測學刊 水清石見--台灣北部水庫水質監測</p></b>
+                </div>
+
+            </div>
+
+            
+            
+            <!-- 右邊欄位 -->
+            <div class="right-column">
+                <div class="section">
+                    <h3>自我介紹</h3>
+                    <p>我的名字是廖苡均，中原大學企業管理學系。有經營自己的手作商店首月達到2166次瀏覽次數，閒暇之餘也會做甜點和麵包。</p>
+                </div>
+                
+                <div class="section">
+                    <h3>語言</h3>
+                    <p>英文、日文、韓文</p>
+                </div>
+                
+                <div class="section">
+                    <h3>程式語言</h3>
+                    <div class="programming-languages">
+                        <div>
+                            <img src="photo/python-icon.png" alt="Python"> Python
+                            <img src="photo/html-icon.png" alt="HTML"> HTML
+                            <img src="photo/java-icon.png" alt="Java"> Java
+                            <img src="photo/css-icon.png" alt="CSS"> CSS
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="section">
+                    <h3>其他技能</h3>
+                    <p>Photoshop</p>
+                    <p>Illustrator</p>
+                    <p>Excel VBA</p>
+                </div>
+                <!-- 跑馬燈圖片 -->
+                <div class="marquee">
+                    <img src="photo/house.webp" alt="詹冰故居">
+                    <img src="photo/study.png" alt="期刊">
+                    <img src="photo/store.png" alt="商店">
+                </div>
+
+            </div>
+        </div>
+
+        <div class="spacer"></div> 
+        
+        <div class="section">
+            <h3>工作經歷</h3>
+            <b><p>旁賈彼印度料理餐廳<br></b>
+            為了提升我的英文口說能力，我選擇在一家印度料理餐廳打工，以便沉浸在英語環境中。在餐廳中，所有員工皆以英文交流，這對我來說是一個很好的練習機會，雖然面對重口音的挑戰，我仍希望能克服語言障礙。我主動與同事溝通，詢問不懂的地方。我利用休息時間與他們聊天，加強了我們之間的團隊默契。並且讓我對不同文化有了更深刻的理解。</p>
+            <b><p>Ladynara 泰式餐飲餐廳</br></b>
+            透過實際經歷了解績效及人員管理的運作。在餐廳的工作中，我注意到教育訓練、崗位安排及員工激勵等方面的重要性，並希望能理解這些管理措施對工作效率的影響。包括崗位輪替的安排和員工每月例行會議。了解主管為什麼要進行這些安排，並與同事交流心得。</p>
+        </div>
+        
+        <div class="spacer"></div> 
+        
+        <div class="section">
+            <h3>聯絡資訊</h3>
+            <p>商店 IG: <a href="https://www.instagram.com/finger_21select/" target="_blank">finger_21select</a></p>
+            <p>個人 FB: <a href="https://www.facebook.com/profile.php?id=100027580235838" target="_blank">廖苡均</a></p>
+            <p>LinkedIn: YiChunLiao</p>
+        </div>
+    </div>
+    
+    <div class="footer">
+        <p>YiChunLiao weibo</p>
+    </div>
+</body>
+</html>
